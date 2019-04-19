@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>dotnetfx</id>
-    <version>4.8.0.0-rtw2</version>
-    <packageSourceUrl>https://github.com/jberezanski/ChocolateyPackages/tree/master/dotnetfx</packageSourceUrl>
+    <id>netfx-4.6.2</id>
+    <version>4.6.2.0-rc1</version>
+    <packageSourceUrl>https://github.com/jberezanski/ChocolateyPackages/tree/master/netfx-4.6.2</packageSourceUrl>
     <owners>jberezanski</owners>
-    <title>Microsoft .NET Framework 4.8</title>
+    <title>Microsoft .NET Framework 4.6.2</title>
     <authors>Microsoft</authors>
     <projectUrl>https://www.microsoft.com/net/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jberezanski/ChocolateyPackages/f0b24b6aef7a58ec03550035644ce872aba13c23/icons/dotnet.png</iconUrl>
@@ -19,18 +19,22 @@
 
 The .NET Framework provides many services, including memory management, type and memory safety, security, networking, and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F#, and Visual Basic.
 
-Supported Windows Client versions: Windows 10 version 1903, Windows 10 version 1809, Windows 10 version 1803, Windows 10 version 1709, Windows 10 version 1703, Windows 10 version 1607, Windows 8.1, Windows 7 SP1
+The Microsoft .NET Framework 4.6.2 is a highly compatible, in-place update to the Microsoft .NET Framework 4, 4.5, 4.5.1, 4.5.2, 4.6 and 4.6.1.
+You can see the full set of changes in the .NET Framework 4.6.2 in the [what's new list](https://docs.microsoft.com/en-us/dotnet/framework/whats-new/index#v462), [change list](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-changes.md) and [API diff](https://github.com/Microsoft/dotnet/blob/master/releases/net462/dotnet462-api-changes.md) on [GitHub](https://github.com/microsoft/dotnet).
 
-Supported Windows Server versions: Windows Server 2019, Windows Server version 1803, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1
+The matching Developer Pack can be installed using [this package](https://chocolatey.org/packages/netfx-4.6.2-devpack).
 
-The matching Developer Pack can be installed using [this package](https://chocolatey.org/packages/netfx-4.8-devpack).</description>
+**This package is intended to be used by package maintainers as a dependency.** For end users the [dotnetfx](https://chocolatey.org/packages/dotnetfx) package is recommended, because it provides an easy way to upgrade the .NET Framework to a future release using standard Chocolatey mechanisms.
+
+On systems which have a newer version of the .NET Framework installed, this package installs successfully, but does nothing.
+</description>
     <releaseNotes>
 ##### Software
-[.NET Framework 4.8 announcement](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-8/)
-[.NET Framework 4.8 release notes](https://github.com/Microsoft/dotnet/blob/master/releases/net48/README.md)
-[.NET Framework 4.8 changes](https://github.com/Microsoft/dotnet/blob/master/releases/net48/dotnet48-changes.md)
+[.NET Framework 4.6.2 announcement](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)
+[.NET Framework 4.6.2 release notes](https://github.com/Microsoft/dotnet/blob/master/releases/net462/README.md)
+[.NET Framework 4.6.2 known issues](https://support.microsoft.com/en-us/help/3151796/known-issues-for-the-.net-framework-4.6.2)
 ##### Package
-4.8.0.0-rtw2: Refactored installation script.
+4.6.2.0: Initial package release.
     </releaseNotes>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
