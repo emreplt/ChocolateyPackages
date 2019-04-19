@@ -37,10 +37,10 @@ The matching Developer Pack can be installed using [this package](https://chocol
   </metadata>
   <files>
     <file src="tools\*.*" target="tools" />
-    <file src="..\shared\DotNetFrameworkHelpers.ps1" target="tools" />
-    <file src="..\shared\Get-DefaultChocolateyLocalFilePath.ps1" target="tools" />
-    <file src="..\shared\Get-NativeInstallerExitCode.ps1" target="tools" />
-    <file src="..\shared\Install-ChocolateyInstallPackageAndHandleExitCode.ps1" target="tools" />
-    <file src="..\shared\Set-PowerShellExitCode.ps1" target="tools" />
+    <file src="..\..\shared\DotNetFrameworkHelpers.ps1" target="tools" />
+    <file src="..\..\shared\Get-DefaultChocolateyLocalFilePath.ps1" target="tools" />
+    <file src="..\..\shared\Get-NativeInstallerExitCode.ps1" target="tools" />
+    <file src="..\..\shared\Install-ChocolateyInstallPackageAndHandleExitCode.ps1" target="tools" />
+    <file src="..\..\shared\Set-PowerShellExitCode.ps1" target="tools" />
   </files>
 </package>
