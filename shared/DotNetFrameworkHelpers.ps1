@@ -114,7 +114,7 @@ function Install-DotNetFrameworkOrDevPack
     Invoke-CommandWithTempPath -TempPath $safeLogPath -ScriptBlock { Install-ChocolateyInstallPackageAndHandleExitCode @installerExeArguments -ExitCodeHandler $ExitCodeHandler }
 }
 
-function Install-DotNet
+function Install-DotNetFramework
 {
     [CmdletBinding(PositionalBinding = $false)]
     Param
